@@ -14,13 +14,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 with st.sidebar:
-    
+    num_digits = st.slider(
+        'Number of decimal digits:',
+        min_value = 10000,
+        max_value = 100000,
+        step = 10000
+    )
 
-    num_digits = st.slider('Number of decimal digits:',
-                           min_value = 10000, 
-                           max_value = 100000,
-                           step = 10000)
-    
 mp.dps = num_digits + 2
 pi_digits = mp.pi
 # st.write(str(pi_digits))
@@ -45,6 +45,3 @@ ax.set_ylabel('Digit, 0~9')
 plt.yticks(range(10))
 
 st.pyplot(fig)
-
-
-    
