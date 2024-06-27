@@ -14,6 +14,7 @@ b = np.array([[4, 5, 6]])
 
 # calculate element-wise product of row vectors
 a_times_b = a*b
+print(a_times_b)
 
 A = np.array([[1, 2, 3],
               [4, 5, 6]])
@@ -23,3 +24,4 @@ B = np.array([[1, 2, 3],
 
 # calculate element-wise product of matrices
 A_times_B = A*B
+print(A_times_B)

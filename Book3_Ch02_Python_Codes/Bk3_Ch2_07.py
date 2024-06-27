@@ -10,7 +10,7 @@
 
 import numpy as np
 
-# row vector dot product 
+# row vector dot product
 
 a_row = np.array([[1, 2, 3]])
 b_row = np.array([[4, 3, 2]])
@@ -21,7 +21,7 @@ print(a_dot_b)
 print(np.inner(a_row[:], b_row[:]))
 print(np.sum(a_row * b_row))
 
-#%% column vector dot product 
+#%% column vector dot product
 
 a_col = np.array([[1],  [2], [3]])
 b_col = np.array([[-1], [0], [1]])

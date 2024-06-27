@@ -29,27 +29,27 @@ def bmatrix(a):
 
 #%%
 with st.sidebar:
-    
+
     st.latex(r'C_{m\times n} = A_{m\times p} B_{p\times n}')
-    
+
     rows_A = st.slider('Number of rows in A:',
                     min_value = 1,
                     max_value = 9,
                     value = 5,
                     step = 1)
-    
+
     cols_A = st.slider('Number of columns in A:',
                     min_value = 1,
                     max_value = 9,
                     value = 5,
                     step = 1)
-    
+
     rows_B = st.slider('Number of rows in B:',
                     min_value = 1,
                     max_value = 9,
                     value = 5,
                     step = 1)
-    
+
     cols_B = st.slider('Number of columns in B:',
                     min_value = 1,
                     max_value = 9,
